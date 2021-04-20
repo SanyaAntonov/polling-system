@@ -35,7 +35,7 @@ This Java project offers a `RESTful API` with basic authentication for admin and
 **1. Clone a repository:**
 
 ```sh
- git clone https://github.com/SanyaAntonov/
+ git clone https://github.com/SanyaAntonov/polling-system
 ```
 
 **2. Open the project using the IDE**
