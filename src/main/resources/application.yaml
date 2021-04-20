@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 20
+        jdbc.batch_size: 20
+  datasource:
+    url: jdbc:h2:mem:polling
+    #    tcp: jdbc:h2:tcp://localhost:9092/mem:polling
+    username: sa
+    password:
+  h2.console.enabled: true
+
+  data.rest:
+    basePath: /api
+    defaultPageSize: 20
+    returnBodyOnCreate: true
+
+logging:
+  level:
+    root: WARN
+    ru.antonov.polling: DEBUG
+
+server.servlet:
+  encoding:
+    charset: UTF-8
+    force: true
